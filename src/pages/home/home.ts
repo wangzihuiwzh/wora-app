@@ -36,8 +36,7 @@ export class HomePage {
   ngOnInit() {
     // this.initBuptBbsRss()
 
-    this.films = this.http.get('http://swapi.co/api/films')
-                          .map(res => res.json());
+    this.films = this.http.get('http://api.jisuapi.com/astro/all?appkey=53cf8e305817fbc9').map(res => res.json());
   }
 
   openDetails(film) {
